@@ -12,5 +12,5 @@ function draw() {
   background(220);
   image(screenshot,0,0,screenshot.width/3,screenshot.height/3);
   test = DeviceOrientationEvent
-  text(test);
+  text(test,50,50);
 }
