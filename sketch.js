@@ -14,3 +14,17 @@ function draw() {
   test = DeviceOrientationEvent
   text(test,50,50);
 }
+
+function setupMobile() {
+  if (typeof DeviceOrientationEvent !== "undefined") {
+    DeviceOrientationEvent.requestPermission()
+      .then(response => {
+        if (response === 'granted') {
+          // Permission granted, allow sensor access
+          console.log('Permission granted for mobile sensors');
+        } else {
+          console.log('Permission denied for mobile sensors');
+        }
+      });
+  }
+}
