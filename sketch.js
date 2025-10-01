@@ -10,6 +10,7 @@ function setup() {
 
 function draw() {
   background(220);
+  if (noMobileSensorInput()) return; // Check if sensor data is available
   image(screenshot,0,0,screenshot.width/3,screenshot.height/3);
   test = DeviceOrientationEvent
   text(test,50,50);
