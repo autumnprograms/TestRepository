@@ -14,6 +14,8 @@ function setup() {
 
 function draw() {
   if (window.sensorsEnabled) {
+		orientationZ = rotationZ;
+
     background('red');
     rotate (orientationy);
     text(orientationy,50,50);
