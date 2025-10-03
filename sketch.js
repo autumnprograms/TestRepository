@@ -20,8 +20,10 @@ function draw() {
 
     push();
     translate(windowWidth/2, windowHeight/2);
+    xAlign(CENTER);
+    yAlign(CENTER)
     rotate(orientationY);
-    image(screenshot, -screenshot.width/6, -screenshot.width/3, screenshot.width/3, screenshot.height/3);
+    image(screenshot, 0, 0, screenshot.width/3, screenshot.height/3);
     pop();
 
     
