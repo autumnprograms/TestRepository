@@ -21,7 +21,7 @@ function draw() {
     push();
     translate(width/2, height/2);
     rotate (orientationY);
-    image(0,0,screenshot.width/3,screenshot.height/3);
+    image(screenshot,0,0,screenshot.width/3,screenshot.height/3);
     pop();
     
     textSize(25);
