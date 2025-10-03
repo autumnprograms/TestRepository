@@ -19,7 +19,7 @@ function draw() {
     background('red');
 
     push();
-    translate(width/2, height/2);
+    translate(windowWidth/2, windowHeight/2);
     rotate (orientationY);
     image(screenshot,0,0,screenshot.width/3,screenshot.height/3);
     pop();
