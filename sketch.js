@@ -18,10 +18,11 @@ function draw() {
 
     background('red');
 
-
+    push();
     translate(windowWidth/2, windowHeight/2);
     rotate(orientationY);
-    image(screenshot, screenshot.width/6, screenshot.width/6, screenshot.width/3, screenshot.height/3);
+    image(screenshot, -screenshot.width/6, -screenshot.width/3, screenshot.width/3, screenshot.height/3);
+    pop();
 
     
     textSize(25);
