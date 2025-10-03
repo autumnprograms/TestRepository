@@ -20,8 +20,9 @@ function draw() {
 
     push();
     translate(windowWidth/2, windowHeight/2);
-    rotate (orientationY);
-    image(screenshot,0,0,screenshot.width/3,screenshot.height/3);
+    rotate(radians(orientationY));
+    imageMode(CENTER);
+    image(screenshot, 0, 0, screenshot.width/3, screenshot.height/3);
     pop();
     
     textSize(25);
