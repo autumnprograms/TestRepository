@@ -18,11 +18,7 @@ function draw() {
 
     background('red');
 
-    push();
-    translate(windowWidth/2, windowHeight/2);
-    rotate (orientationY);
-  
-    pop();
+
     
     textSize(25);
     textFont('Courier New');
