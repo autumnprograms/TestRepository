@@ -9,6 +9,7 @@ function preload()
 function setup() {
   createCanvas(windowWidth, windowHeight);
   enableGyroTap('Tap to enable motion sensors');
+	lockGestures();
 }
 
 function draw() {
